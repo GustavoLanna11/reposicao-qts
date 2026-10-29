@@ -1,7 +1,7 @@
 [project]
 name = "reposicao-qts"
 version = "0.1.0"
-description = "Add your description here"
+description = "Laboratório de segurança contra SQL Injection e XSS"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
@@ -18,3 +18,12 @@ reposicao-qts = "reposicao_qts:main"
 [build-system]
 requires = ["uv_build>=0.12.20,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.pytest.ini_options]
+markers = [
+    "security: testes de seguranca ofensiva e defensiva (OWASP)",
+]
+filterwarnings = [
+    "ignore::DeprecationWarning",
+    "ignore:.*testclient.*:Warning",
+]
