@@ -24,3 +24,6 @@ uv sync --system-certs
 ### 3. Executando os testes de Segurança
 Para rodar a suíte de testes automatizados (pytest), execute o comando abaixo no terminal:
 ```$env:PYTHONPATH="."; uv run pytest -v```
+
+### 4. Exemplo de saída
+<img width="1681" height="361" alt="image" src="https://github.com/user-attachments/assets/93afa29c-318d-4b99-b8f2-7533776dd6c7" />
